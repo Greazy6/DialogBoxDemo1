@@ -19,6 +19,12 @@ public class DialogBoxDemo1 {
         
         String nName = JOptionPane.showInputDialog(null, "Did you like seing your name? Yes or No");
         JOptionPane.showMessageDialog(null,name + " Selected " + nName);
+        
+        String input = JOptionPane.showInputDialog(null, "Hello " + name + "please enter your current age");
+        int age = Integer.parseInt(input);
+        JOptionPane.showMessageDialog(null,"OK " + name + " Next year you will be " +  ++age);
+        
+        
     }
     
 }
